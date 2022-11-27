@@ -1,0 +1,101 @@
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  /* Chỉnh sửa Navbar */
+  #nav--3 {
+    display: none;
+  }
+
+  .nav-bar a {
+    flex-basis: 20%;
+    height: 60px;
+  }
+
+  /* Xây dựng phần thông tin cá nhân */
+  #about h1 {
+    font-size: 20px;
+  }
+
+  #about p,
+  .info,
+  .icon {
+    font-size: 16px;
+  }
+
+  /* Xây dựng phần thông tin nghề nghiệp */
+  .job-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 500px 400px;
+  }
+
+  /* Setup phần sở thích */
+  .icon-mini i {
+    font-size: 26px;
+  }
+
+  .icon-mini {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
+  }
+
+  .icon--2 {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #1550aa;
+    border-radius: 50%;
+    padding: 10px;
+    padding-left: 12px;
+  }
+
+  .icon--3 {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #1550aa;
+    border-radius: 50%;
+    padding: 10px 0;
+  }
+
+  .content--1 p {
+    font-size: 14px;
+    margin: 0;
+    margin-top: 10px;
+    text-align: start;
+    margin-left: 10px;
+  }
+
+  /* Setup phần chứng chỉ */
+  .certificate-2 {
+    flex-direction: column;
+  }
+
+  /* Setup phần dự án */
+  .mini--1 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+  }
+
+  .icon-prj {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+  }
+
+  .time-prj {
+    padding: 10px 15px;
+    background-color: #1550aa;
+    border-radius: 100px;
+    margin-right: 10px;
+    color: #f7f7f7;
+  }
+
+  .name-prj h2 {
+    font-size: 22px;
+  }
+
+  .table-content tr td {
+    font-size: 14px;
+  }
+}

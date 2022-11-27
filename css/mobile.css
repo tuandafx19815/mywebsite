@@ -1,0 +1,147 @@
+@media only screen and (max-width: 600px) {
+  /* Chỉnh sửa Navbar */
+  #nav--3 {
+    display: none;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+  }
+
+  .nav-bar a {
+    align-self: flex-start;
+    padding: 20px 10px;
+    border: none;
+    border-bottom: 1px solid #c2bdbd;
+    width: 100%;
+    text-align: start;
+  }
+
+  /* Xây dựng phần thông tin cá nhân */
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  #target {
+    padding-bottom: 20px;
+  }
+
+  /* Xây dựng phần thông tin nghề nghiệp */
+  .job-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Setup phần sở thích */
+  .icon-mini i {
+    font-size: 26px;
+  }
+
+  .icon-mini {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 100px 100px;
+  }
+
+  .icon--2 {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #1550aa;
+    border-radius: 50%;
+    padding: 10px;
+    padding-left: 12px;
+  }
+
+  .icon--3 {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #1550aa;
+    border-radius: 50%;
+    padding: 10px 0;
+  }
+
+  .content--1 p {
+    font-size: 14px;
+    margin: 0;
+    margin-top: 10px;
+    text-align: start;
+    margin-left: 10px;
+  }
+
+  /* Setup phần ngôn ngữ và kỹ năng */
+  .blue-1 {
+    background: #199cdb;
+    display: inline-block;
+    height: 3px;
+    margin-right: 10px;
+    width: 50px;
+  }
+
+  .gray-1 {
+    background: rgb(164, 162, 162);
+    display: inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 50px;
+  }
+
+  /* Setup phần chứng chỉ */
+  .certificate-1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .certificate-2 {
+    flex-direction: column;
+  }
+
+  .certificate-1 .certificate-2:nth-child(2) {
+    border-left: none;
+  }
+
+  .img-cer {
+    width: 80%;
+    height: auto;
+  }
+
+  /* Setup phần dự án */
+  .cover {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .project-3 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mini--1 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+  }
+
+  .mini--1 p {
+    font-size: 20px;
+  }
+
+  .time-prj {
+    margin-bottom: 10px;
+  }
+
+  .name-prj h2 {
+    font-size: 28px;
+  }
+
+  .table-content tr td {
+    font-size: 18px;
+  }
+
+  /* Setup footer */
+  #footer ul li {
+    display: block;
+    margin: 0;
+  }
+}

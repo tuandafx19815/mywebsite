@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  border-bottom: 2px solid #b2b7b4d0;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin: 10px 20px;
+}
+
+.icon-qm {
+  width: 120px;
+  height: 50px;
+  margin: 10px 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1.5fr;
+  grid-template-rows: 1.5fr 1fr;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+/* Setup phần Goals */
+.goals h2,
+.goals p {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.content-goals {
+  border-bottom: 1px solid rgba(215, 211, 211, 0.707);
+}
+
+/* Setup phần Team */
+.team h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.team p {
+  font-size: 18px;
+}
+
+.team .icon {
+  margin-right: 40px;
+}
+
+/* Setup phần Timeline */
+.timeline h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.timeline p {
+  font-size: 18px;
+}
+
+.number p {
+  font-size: 28px;
+  margin: 0;
+}
+
+.number {
+  padding: 6px;
+  background-color: rgb(126, 19, 226);
+  margin-right: 20px;
+  border: 3px solid #24042cd0;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.timeline--1 {
+  border-bottom: 2px dashed #5f5e60d0;
+  flex-basis: 80%;
+}
+
+.timeline--1 p {
+  margin-bottom: 0;
+}
+
+.timeline {
+  grid-row: 1/-1;
+  grid-column: 3/4;
+}
+
+/* Setup phần primary */
+.icon-qm {
+  width: 120px;
+  height: 50px;
+  margin: 10px 20px;
+}
+
+/* Responsive tablet */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-goals,
+  .content-team,
+  .content-primary {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-timeline,
+  .content-scopes {
+    flex-direction: column;
+  }
+
+  .team--1,
+  .number {
+    align-self: flex-start;
+  }
+
+  .team,
+  .primary {
+    order: 1;
+  }
+
+  .timeline {
+    order: 2;
+  }
+}
+
+/* Responsive mobile */
+@media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-goals,
+  .content-team {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team--1,
+  .number {
+    align-self: flex-start;
+  }
+
+  .content-timeline,
+  .content-scopes {
+    flex-direction: column;
+  }
+
+  .team,
+  .primary {
+    order: 1;
+  }
+
+  .timeline {
+    order: 2;
+  }
+}
